@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Representatives</title>
+  <style>
+    /* General styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+
+    .sales-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .sales-card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .sales-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .sales-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .sales-info {
+      padding: 15px;
+    }
+
+    .sales-info h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sales-info p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .sales-contact {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #007bff;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .sales-contact:hover {
+      color: #0056b3;
+    }
+
+    @media (max-width: 480px) {
+      .sales-info h3 {
+        font-size: 1rem;
+      }
+
+      .sales-info p {
+        font-size: 0.8rem;
+      }
+
+      .sales-contact {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Back Button -->
+  <a href="index.html" class="back-button">← Back</a>
+
+  <!-- Title -->
+  <h1>Meet Our Sales Representatives</h1>
+  
+  <!-- Sales Container -->
+  <div class="sales-container">
+    <!-- Sales Rep 1 -->
+    <div class="sales-card">
+      <img src="https://via.placeholder.com/300x200" alt="Sales Representative">
+      <div class="sales-info">
+        <h3>Masembe Brian</h3>
+        <p>Specialty: SUVs & Sedans</p>
+        <p>Location: Kampala, Uganda</p>
+        <a href="mailto:masembebrian69@gmail.com" class="sales-contact">Contact: masembebrian69@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Sales Rep 2 -->
+    <div class="sales-card">
+      <img src="https://via.placeholder.com/300x200" alt="Sales Representative">
+      <div class="sales-info">
+        <h3>Angel Willa</h3>
+        <p>Specialty: Luxury Cars</p>
+        <p>Location: Entebbe, Uganda</p>
+        <a href="mailto:willaangel5200@gmail.com" class="sales-contact">Contact: willaangel5200@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Sales Rep 3 -->
+    <div class="sales-card">
+      <img src="https://via.placeholder.com/300x200" alt="Sales Representative">
+      <div class="sales-info">
+        <h3>David Bin</h3>
+        <p>Specialty: Compact & Hatchbacks</p>
+        <p>Location: Jinja, Uganda</p>
+        <a href="mailto:davidbin@gmail.com.com" class="sales-contact">Contact: davidbin@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Sales Rep 4 -->
+    <div class="sales-card">
+      <img src="https://via.placeholder.com/300x200" alt="Sales Representative">
+      <div class="sales-info">
+        <h3>Lisa Green</h3>
+        <p>Specialty: Electric Vehicles</p>
+        <p>Location: Gulu, Uganda</p>
+        <a href="mailto:lisagreen@example.com" class="sales-contact">Contact: lisagreen@example.com</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

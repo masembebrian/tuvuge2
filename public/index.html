@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Bond System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="Sign In">Sign In</a>
+            <span>|</span>
+            <address>12 Street, Kampala, UG, 94101</address>
+            <span>|</span>
+            <a href="tel:+12345678901">+1234 567-8901</a>
+        </div>
+        <div class="logo-container">
+            <h1><span class="logo-text-orange">TUVUGE</span></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li><a href="#">Sell My Car</a></li>
+                <li><a href="#">DEALERS</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slideshow">
+        <img src="../images/benz.jpg" alt="Car 1">
+        <img src="../images/prado.jpg" alt="Car 2">
+        <img src="../images/audi.jpg" alt="Car 3">
+      </div>
+      <aside class="search-filters">
+        <h3>Search</h3>
+        <label>BOND/DEALER</label>
+        <select>
+            <OPtion>ANY</OPtion>
+            <option>LEMAX</option>
+            <!-- Add options as needed -->
+        </select>
+        <label>Vehicle Type</label>
+        <select>
+            <option>Any</option>
+            <option>SUV</option>
+            <option>Sedan</option>
+            <OPtion>CONVERTIBLE</OPtion>
+            <OPTIon>COUPE</OPTIon>
+            <OPTion>STATION WAGON</OPTion>
+            <OPTion>HATCHBACK</OPTion>
+            <OPtion>MINIVAN</OPtion>
+            <OPtion>TRUCK</OPtion>
+            <OPtion>BUS</OPtion>
+            <OPtion>CROSSOVER</OPtion>
+            <OPTion>AMBULANCE</OPTion>
+            <OPtion>VAN</OPtion>
+            <OPtion>BICYCLE</OPtion>
+            <OPtion>MOTORCYCLE</OPtion>
+            <OPtion>FORKLIFT</OPtion>
+            <OPTion>BOAT</OPTion>
+            <OPTion>ELETRIC VEHICLE</OPTion>
+            <OPTIon>SPORTS CAR</OPTIon>
+        </select>
+        <div class="search-container">
+            <label for="make">Make:</label>
+            <select id="make" name="make" onchange="updateModelOptions()">
+              <option value="">Select Make</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Honda">Honda</option>
+              <option value="Nissan">Nissan</option>
+            </select>
+            
+            <label for="model">Model:</label>
+            <select id="model" name="model">
+              <option value="">Select Model</option>
+            </select>                
+        </div>
+        <label>Steering</label>
+        <select>
+            <option>Any</option>
+            <option>Left</option>
+            <option>Right</option>
+        </select>
+        <label>Price (Ugx) min/max</label>
+        <input type="number" placeholder="0"> - <input type="number" placeholder="0">
+        <label>Year</label>
+        <input type="number" placeholder="min"> - <input type="number" placeholder="max">
+        <button class="search-button">SEARCH</button>
+    </aside>
+    <main class="recent-cars-section">
+        <section class="recent-cars">
+            <h2>Recent Cars</h2>
+            <div class="car-grid">
+              <div class="car-item">
+                <img src="range-rover.jpg" alt="Range Rover 2020">
+                <h3>RANGE ROVER '2020</h3>
+                <p>€150,000</p>
+                <p>Location: Germany / Berlin / Gosen</p>
+                <p>Engine: 6.5 cm³ LP, Petrol</p>
+                <p>Kilometer: 30,000 km</p>
+                <p>Condition: Used</p>
+                <button>View Detail</button>
+              </div>
+              <div class="car-item">
+                <img src="benz.jpg" alt="Benz 2014">
+                <h3>BENZ '2014</h3>
+                <p>€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Condition: New</p>
+                <button>View Detail</button>
+              </div>
+              <div class="car-item">
+                <img src="audi.jpg" alt="Audi 2020">
+                <h3>AUDI '2020</h3>
+                <p>€500,000</p>
+                <p>Location: Jinja / Davies Bond</p>
+                <p>Engine: 6.1 cm³ LP, Petrol</p>
+                <p>Condition: New</p>
+                <button>View Detail</button>
+              </div>
+              <!-- Add more car items as needed -->
+            </div>
+          </section>
+          <!-- Articles Section -->
+    <div class="articles-section">
+        <h2>Articles</h2>
+        <div class="article">
+          <h3>Tips for Buying a Used Car</h3>
+          <p>Learn how to inspect and negotiate...</p>
+        </div>
+        <div class="article">
+          <h3>Maintaining Your Car's Engine</h3>
+          <p>Simple tips to keep your car engine in great shape...</p>
+        </div>
+        <!-- Add more articles here -->
+      </div>
+    </div>
+          
+        <!--<aside class="sidebar">
+            <section class="recently-added">
+                <h3>Recently Added Cars</h3>
+                <table>
+                    <tr>
+                        <th>within hour</th>
+                        <th>within day</th>
+                        <th>added cars total</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>32</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="news-updates">
+                <h3>Latest News</h3>
+                <article>
+                    <h4>GM Starts Shipping ...</h4>
+                    <p>Corrupti. Nec culpa corrupti, irure reprehenderit posue ...</p>
+                    <span>Apr 28, 2015</span> <span>3 comments</span>
+                </article>
+                <article>
+                    <h4>Union Says Striking ...</h4>
+                    <p>Penatibus, exercitationem irure reprehenderit posue ...</p>
+                    <span>Apr 25, 2015</span> <span>5 comments</span>
+                </article>
+            </section>-->
+        </aside>
+    </main>
+    <main>
+       <!-- Navigation dots -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        
+        
+    </main>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section about-us">
+                <h4>About <span class="section-title-orange">Us</span></h4>
+                <p>Our Mission: To provide a seamless car-buying experience with a commitment to quality, transparency, and customer satisfaction.</p>
+                <p>Our Vision: To be the leading car dealership in the region by continuously exceeding customer expectations and setting industry standards for quality and service.</p>
+                <p>Stop by our showroom today, or browse our online inventory to find your next car. We look forward to helping you drive off in the car of your dreams!
+
+                </p>
+            </div>
+            <div class="footer-section our-hours">
+                <h4>Our <span class="section-title-orange">Hours</span></h4>
+                <ul>
+                    <li>Monday <span>08:00 - 19:00</span></li>
+                    <li>Tuesday <span>08:00 - 19:00</span></li>
+                    <li>Wednesday <span>08:00 - 19:00</span></li>
+                    <li>Thursday <span>08:00 - 19:00</span></li>
+                    <li>Friday <span>08:00 - 19:00</span></li>
+                    <li>Saturday <span>08:00 - 19:00</span></li>
+                    <li>Sunday <span>Closed</span></li>
+                </ul>
+            </div>
+            <div class="footer-section our-contacts">
+                <h4>Our <span class="section-title-orange">Contacts</span></h4>
+                <p>Lorem ipsum Dolor sit amet, 658 Consectetur, Adipiscing 56 D</p>
+                <p>+1 (234) 567-8901</p>
+                <p>+1 (234) 567-8902</p>
+                <p><a href="mailto:info@tuvuge.com">info@tuvuge.com</a></p>
+                <div class="social-media-icons">
+                    <a href="#"><img src="../images/x.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="../images/facebook.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="../images/ig.jpg" alt="instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section our-location">
+                <h4>Our <span class="section-title-orange">Location</span></h4>
+                <img src="map-placeholder.jpg" alt="Location Map">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024. All rights reserved</p>
+            <p>TUVUGE</p>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active-dot";
+            
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+        function loginRequired() {
+      alert("You must log in to access this page.");
+      window.location.href = "login.html";
+    }
+        </script>
+        
+     <script src="scripts.js"></script>
+</body>
+</html>

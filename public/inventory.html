@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>TUVUGE</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="inventory.html">Inventory</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacts.html">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+            <h3>Filter by:</h3>
+            <form>
+                <label>Condition:</label>
+                <select>
+                    <option>Any</option>
+                    <option>New</option>
+                    <option>Used</option>
+                </select>
+
+                <label>Vehicle Type:</label>
+                <select>
+                    <option>Any</option>
+                    <option>SUV</option>
+                    <option>Sedan</option>
+                    <OPtion>CONVERTIBLE</OPtion>
+                    <OPTIon>COUPE</OPTIon>
+                    <OPTion>STATION WAGON</OPTion>
+                    <OPTion>HATCHBACK</OPTion>
+                    <OPtion>MINIVAN</OPtion>
+                    <OPtion>TRUCK</OPtion>
+                    <OPtion>BUS</OPtion>
+                    <OPtion>CROSSOVER</OPtion>
+                    <OPTion>AMBULANCE</OPTion>
+                    <OPtion>VAN</OPtion>
+                    <OPtion>BICYCLE</OPtion>
+                    <OPtion>MOTORCYCLE</OPtion>
+                    <OPtion>FORKLIFT</OPtion>
+                    <OPTion>BOAT</OPTion>
+                    <OPTion>ELETRIC VEHICLE</OPTion>
+                    <OPTIon>SPORTS CAR</OPTIon>
+                </select>
+
+                <label>Make:</label>
+                <select>
+                    <option>Any</option>
+                    <option>TOYOTA</option>
+                    <option>SUBARU</option>
+                    <option>NISSAN</option>
+                    <option>HONDA</option>
+                    <option>MAZDA</option>
+                    <option>HYUNDAI</option>
+                    <option>MITSUBISHI</option>
+                    <option>BMW</option>
+                    <option>MERCEDES-BENZ</option>
+                    <option>VOLKSWAGEN</option>
+                    <option>AUDI</option>
+                    <option>FORD</option>
+                    <option>CARDILLAC</option>
+                    <option>CHRYSLER</option>
+                    <option>BENTLEY</option>
+                    <option>JAGUAR</option>
+                    <option>JEEP</option>
+                    <option>LAND-ROVER</option>
+                    <option>LEXUS</option>
+                    <option>PEUGEOT</option>
+                    <option>RENAULT</option>
+                    <option>TATA</option>
+                    <option>TESLA</option>
+                    <option>VOLVO</option>
+                    <option>SUZUKI</option>
+                    <option>PORCHE</option>
+                    <option>MASERATI</option>
+                    <option>LINCOLN</option>
+                    <option>KIA</option>
+                    <option>ISUZU</option>
+                    <option>INFINITY</option>
+                    <option>GMC</option>
+                    <option>FIAT</option>
+                    <option>FOTON</option>
+                    <option>DODGE</option>
+                    <option>DATSUN</option>
+                    <option>CITROEN</option>
+                    <option>ROLLS-ROYCE</option>
+                    <OPtion>OTHER</OPtion>
+                </select>
+
+                <label>Model:</label>
+                <select>
+                    <option>Any</option>
+                </select>
+
+                <label>Price (Ugx) min/max:</label>
+                <input type="number" placeholder="Min"> - <input type="number" placeholder="Max">
+
+                <label>Year:</label>
+                <select>
+                    <option>Min</option>
+                </select> - 
+                <select>
+                    <option>Max</option>
+                </select>
+
+                <label>Kilometer min/max:</label>
+                <input type="number" placeholder="Min"> - <input type="number" placeholder="Max">
+                
+                <label>Fuel Type:</label>
+                <select>
+                    <option>Any</option>
+                    <option>Petrol</option>
+                    <option>Diesel</option>
+                </select>
+
+                <label>Gearbox:</label>
+                <select>
+                    <option>Any</option>
+                    <option>Automatic</option>
+                    <option>Manual</option>
+                </select>
+            </form>
+        </aside>
+
+        <!-- Inventory Grid -->
+        <section class="inventory-grid">
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/audi.jpg" alt="AUDI">
+                <h3>AUDI '2020</h3>
+                <p class="price">€150,000</p>
+                <p>Location: Germany / Berlin / Gosen</p>
+                <p>Engine: 6.5 cm³ LP, Petrol</p>
+                <p>Kilometer: 30000 km</p>
+                <p>Condition: Used</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/lexus.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+            <div class="car-card">
+                <div class="featured-label">FEATURED</div>
+                <img src="../images/convertible.jpg" alt="Lexus LFA">
+                <h3>Lexus LFA '2014</h3>
+                <p class="price">€310,000</p>
+                <p>Location: Poland / Lubusz / Biecz</p>
+                <p>Engine: 4.2 cm³ TSI, Diesel</p>
+                <p>Kilometer: -</p>
+                <p>Condition: New</p>
+                <button>View Details</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Dealer. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
